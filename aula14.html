@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 14 - Tags de Block vs. Inline</title>
+</head>
+<body>
+    <h1>Aula 14 - Tags de Block vs. Inline</h1>
+
+    <img src="/img/bloco.png" alt=""> 
+
+
+    <p>Bloco HTML e Elementos Inline</p>
+
+    <p>Cada elemento HTML tem um valor de exibição padrão, dependendo do tipo de elemento.</p>
+    <p>Existem dois valores de exibição: block e inline.</p>
+    <h2>Elementos em nível de bloco</h2>
+    <p>Um elemento de nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.
+
+        Um elemento de nível de bloco sempre ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo possível).</p>
+
+        <br>
+       <img src="/img/blocoembutidos.png" alt="">
+
+       <p>Existem dois valores de exibição: block e inline</p>
+       <p> Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível</p>
+       <p>Um elemento embutido não inicia em uma nova linha e só ocupa a largura necessária</p>
+       <p>O "div"elemento é um nível de bloco e é frequentemente usado como um contêiner para outros elementos HTML</p>
+       <p> O "span" elemento é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento</p>
+       <br>
+
+        <img src="/img/elementoblos.png" alt="">
+
+
+        <br>
+
+        <h2>Elementos inline</h2>
+        <br>
+        <p>"Inline" é uma categorização dos elementos do HTML, em contraste com os "elementos de bloco". Os elementos inline podem ser exibidos em nível de bloco ou outros elementos inline. Eles ocupam somente a largura de seu conteúdo. A diferença entre elementos inline e bloco incluem:</p>
+        <h2> Modelo de conteúdo</h2>
+        <p> Geralmente, elementos inline devem ter somente dados em outros elementos inline.</p>
+        <h2>Formato</h2>
+        <p>Por padrão, os elementos inline não começam em uma nova linha.</p>
+        <h2>Elementos</h2>
+        <p>Listagem dos elementos que são "inline":</p>
+        <p>b, big, i, small, tt
+            abbr, acronym, cite, code, dfn, em, kbd, strong, samp, var
+            a, bdo, br, img, map, object, q, script, span, sub, sup
+            button, input, label, select, textarea</p>
+        <h2>Elementos de nível de bloco</h2>    
+        <p>Neste artigo, examinaremos os elementos de nível de bloco HTML e como eles diferem dos elementos de nível embutido .
+
+            Os elementos HTML ( Hypertext Markup Language ) historicamente foram categorizados como elementos de "nível de bloco" ou elementos de "nível embutido". Como esta é uma característica de apresentação, hoje em dia é especificada pelo CSS no Flow Layout . Um elemento de nível de bloco ocupa todo o espaço horizontal de seu elemento pai (contêiner), e espaço vertical igual à altura de seu conteúdo, criando assim um "bloco".</p>
+
+
+        <p>Os navegadores normalmente exibem o elemento de nível de bloco com uma nova linha antes e depois do elemento. Você pode visualizá-los como uma pilha de caixas.</p>    
+
+        <p>Um elemento de nível de bloco sempre começa em uma nova linha e ocupa toda a largura disponível (se estende para a esquerda e para a direita o máximo possível).</p>
+        <p>O exemplo a seguir demonstra a influência do elemento em nível de bloco:</p>
+        <img src="/img/blocos-inline.png" alt="">
+        <br>
+
+        <img src="/img/bloco-linha.png" alt="">
+       <br>
+       
+       <h2>O elemento pai (vou chamar agora de pai) de outro elemento (vou chamar de filho) é aquele que contém o filho.
+
+        Digamos que temos a seguinte estrutura:</h2>
+
+        <img src="/img/paiefilho.png" alt="">
+
+        <ul>
+            <li> 1 - O body não tem <strong>pai</strong>, pois nenhum elemento o contém. Porém, body tem um <strong>filho</strong> main.</li>
+            <li> 2 - O main é <strong>filho</strong> do body, e tem como <strong>filhos</strong> os elementos p, img e section.</li>
+            <li> 3 - h1 não é pai de nenhum elemento, mas é <strong>filho</strong> de section, que por sua vez é <strong>filho</strong> de main, sendo main <strong>filho</strong> de body.</li>
+        </ul>
+
+        <p>A partir disso, precisamos considerar que alguns (nem todos!) atributos CSS são herdados do pai de um elemento.</p>
+        <p>Um exemplo é a cor de texto, a propriedade color:. No exemplo acima, se body tivesse color:red, h1teria color:red por padrão também, pois herdou de seu pai section, que herdou de main que por sua vez herdou de body.</p>
+        <p>Para ver se um atributo é herdado de pai para <strong>filho</strong>, pode consultar o atributo aqui: clique no atributo e confira se Inherited tem valor yes ou   <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"></a>no link. </p>
+
+        <br>
+
+        <img src="/img/elementosbr.png" alt="">
+
+        <br>
+        <p>O elemento "br" quebra a linha do texto, sem ela as imagens fica uma ao lado da outro,poq o img é uma tag filha</p>
+        <p>O jeito certo de quebrar linha é com o css.</p>
+        <p>A tag bloc não fica ao elemento ao lado do outro, mesmo que tenha espaço</p>
+        <p>A tag inline ela fica os elementos uma ao lado do outro</p>
+        
+</body>
+</html>

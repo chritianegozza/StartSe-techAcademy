@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 15 - Hierarquia</title>
+</head>
+<body>
+    <h1>Aula 15 - Hierarquia</h1>
+    <img src="/img/hierarquia.png" alt="">
+
+    <p>Um documento HTML é uma árvore de elementos aninhados sendo pais, irmãos, filhos, ancestrais e descendentes
+    </p>
+
+    <ul>
+        <li>No exemplo abaixo, pode-se ver um parágrafo (p):
+        </li>
+        <img src="/img/tg-hiera.png" alt="">
+        <li>Temos:</li>
+        <img src="/img/img-hie.png" alt="">
+        <li>Olhando para hierarquia, temos:
+        </li>
+        <img src="/img/img-2.png" alt="">   
+    </ul>
+
+    <p>Como podemos ver, a Hierarquia de Elementos HTML engloba vários outros fatores, e isso pode gerar uma confusão, mas que com um pouco de esforço acaba fazendo sentido. Além disso, vimos que a Hierarquia de Elementos HTML é importante para manter a organização junto ao fluxo das informações. Nada te impede de escrever o código de qualquer maneira, mas deixa de fazer sentido, então é uma boa prática e um tanto quanto importante planejar o código antes de escrevê-lo.</p>
+
+    <ul>
+        <li>
+            Um elemento filho deve ser fechado antes da tag pai.
+
+        </li>
+        <img src="/img/img-3.png" alt="">
+        <li>
+            O exemplo abaixo é um código inválido, pois a tag "strong" foi aberta depois de "p", porém foi fechada depois de </p>
+
+        </li>
+        <img src="/img/img4.png" alt="">
+        <li>
+            Para corrigir o código acima, o fechamento da tag "strong" deve estar antes do fim da tag <p>
+
+        </li>
+    </ul>
+
+    <h2>Profundidade de hierarquia
+    </h2>
+
+    <p>Elementos filhos podem ter dentro de sí outros elementos filhos, logo é possível criar uma estrutura hierárquia profunda dentro de um documento HTML.
+    </p>
+
+    <img src="/img/img5.png" alt="">
+    <br>
+    <img src="/img/img6.png" alt="">
+
+
+    <br>
+
+    <img src="/img/html-hierarquia.png" alt="">
+    <br>
+</body>
+</html>

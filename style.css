@@ -22,3 +22,39 @@ p{
    font-size: 20px;
    padding: 10px;
 }
+
+#tabelaschol {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#lista {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+ul {
+	list-style-type: square;
+}
+ul li{
+	padding: 3px 0px;
+	color: #FF0000;
+}
+ol {
+	list-style-type: lower-roman;
+}
+ol li{
+	color: #b9b924;
+	font-family: Georgia;
+}
+
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 29 - Metadados</title>
+</head>
+<body>
+<!-- conteudo das aulas 29 a 39 -->
+
+    <h1>Aula 29 - Metadados</h1>
+
+    <br>
+    <img src="/img/metadados.png" alt="">
+
+    <br>
+
+    <img src="/img/meta.png" alt="">
+
+    <br>
+
+    <img src="/img/metatitle.png" alt="">
+    <br>
+
+    <code>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Minha página web</title>
+            <meta charset="UTF-8">
+        </head>
+        <body>
+            <div>Aqui está o texto da minha primeira página começando ..</div>
+        </body>
+        </html>
+
+    </code>
+    
+    <!-- o titulo da pagina É O QUE BUsCADO NO MOTORORES DE BUSCA -->
+
+    <p>Vamos falar da tag style = folha de estilo</p>
+    <br>
+    <img src="/img/style.png" alt="">
+
+    <br>
+    <!-- aula 30 fala de style = Essa tag só da para usar na tag html o style para colocar cores em um texto sem mexer no css por fora -->
+
+    <!-- Aula 32 - Base -->
+    <h2>Base</h2>
+    <p>O elemento HTML Base (<base>) especifica o endereço (URL) utilizada por todos os endereços relativos contidos dentro de um documento. Há um número máximo de 1 (um) elemento Base <base> do documento.</p>
+    <base href="http://www.example.com/">
+    <base target="_blank" href="http://www.example.com/">
+
+    <img src="/img/base-1.png" alt="">
+    <!-- Aula 33 - metatags -->
+    <h2>Aula 33 - metatags</h2>
+    
+     <img src="/" alt="">
+
+    <br>
+
+    <!-- Aula 34 - Metatags Social -->
+    <h2>Aula 34 - Metatags Social</h2>
+
+    <img src="/img/tagmediasocial.png" alt="">
+
+<!-- Aula 35 - FavIcon -->
+<h2>Aula 35 - FavIcon</h2>
+<p>
+
+</p>
+
+
+<!-- Aula 36 - Hyperlinks -->
+<h2>Aula 36 - Hyperlinks </h2>
+<img src="" alt="">
+<br>
+
+<!-- Aula 37 - Âncoras -->
+<h2>Aula 37 - Âncoras</h2>
+<p>Determinas regiões na página que funciona como marcadores para pulamos para uma determinada regiões no html</p>
+<p>Podemos fazer isso pelo id  na páginas </p>
+
+<img src="/img/ancora.png" alt="">
+<p>Podemos também ir para outra página com a Âncora selecionada para buscar em outra ponto e não somente na propria página</p>
+<img src="/img/ancora2.png" alt="">
+
+<!-- Aula 38 - Links especializados -->
+<h2>Aula 38 - Links especializados</h2>
+<p>Podemos fazer página com link para fazer alguma coisa como enviar uim email ou ligar para alguém</p>
+<img src="/img/linkespecializado.png" alt="">
+<br>
+
+<!-- Aula 39 - URL -->
+
+<h2>Aula 39 - URL</h2>
+<br>
+<p>O termo URL pode ser traduzido como Localizador Uniforme de Recursos que padroniza uma série de informações específicas
+</p>
+<p>URL e navegação em diretórios</p>
+<img src="/img/url.png" alt="">
+<br>
+
+    <H2>Tag scrip</H2>
+    <!-- vamos falar da tag script aula 31 -->
+    <p>tag esxcliva na aba html para você usar o javascript dentro da mesma página html</p>
+    <br>
+    <img src="/img/script.png" alt="">
+
+    <p id="meuParagrafo">trocar</p>
+    <button id="btnAlterar">alterar</button>
+    <br>
+    <script>
+        window.onload = function() {
+            document.getElementById("btnAlterar").addEventListener("click",function() {
+                var meuParagrafo = document.getElementById("meuParagrafo")
+                meuParagrafo.innerHTML = "Acabei de alterar meu html ..."
+            })
+        }
+    </script>
+
+    <br>
+
+
+
+</body>
+</html>
